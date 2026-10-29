@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Mail, Instagram, Facebook } from 'lucide-react';
+import { Phone, MapPin, Mail } from 'lucide-react';
+import { SocialLinks } from '../ui/SocialLinks';
 
 export function Footer() {
     return (
@@ -17,10 +18,7 @@ export function Footer() {
                     <p className="text-sm max-w-sm mb-6">
                         Equipamiento comercial B2B premium. La división especializada de MyM Créditos para que potencies tu negocio pagando con tu trabajo gracias a nuestra financiación a medida.
                     </p>
-                    <div className="flex gap-4">
-                        <a href="https://www.instagram.com/electromymsrl/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Instagram size={20} /></a>
-                        <a href="#" className="hover:text-white transition-colors"><Facebook size={20} /></a>
-                    </div>
+                    <SocialLinks />
                 </div>
 
                 {/* Links */}
